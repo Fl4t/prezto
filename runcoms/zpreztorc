@@ -25,6 +25,12 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
+  'archive' \
+  'git' \
+  'history-substring-search' \
+  'osx' \
+  'syntax-highlighting' \
+  'z' \
   'terminal' \
   'editor' \
   'history' \
@@ -39,17 +45,17 @@ zstyle ':prezto:load' pmodule \
 #
 
 # Set the key mapping style to 'emacs' or 'vi'.
-zstyle ':prezto:module:editor' keymap 'emacs'
+zstyle ':prezto:module:editor' keymap 'vi'
 
 # Auto convert .... to ../..
-# zstyle ':prezto:module:editor' dot-expansion 'yes'
+zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 #
 # Git
 #
 
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
-# zstyle ':prezto:module:git:ignore' submodule 'all'
+zstyle ':prezto:module:git:ignore' submodule 'all'
 
 #
 # GNU Utility
