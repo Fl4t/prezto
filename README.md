@@ -17,13 +17,13 @@ version is 4.3.10.
 
   2. Clone the repository:
 
-        git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+        git clone --recursive https://github.com/Fl4t/prezto.git ~/OSX-dotfiles/zsh/zprezto.symlink/
 
   3. Create a new Zsh configuration by copying the Zsh configuration files
      provided:
 
         setopt EXTENDED_GLOB
-        for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
+        for rcfile in ~/OSX-dotfiles/zsh/zprezto.symlink/runcoms/^README.md(.N); do
           ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
         done
 
