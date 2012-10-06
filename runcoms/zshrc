@@ -46,3 +46,8 @@ alias q='exit'
 alias c='clear'
 alias wee='weechat-curses'
 alias tree='nocorrect tree'
+
+# DA2I (java)
+alias jd='javadoc -d doc sources/*java'
+alias jc='javac -sourcepath sources/ -d classes/ -classpath classes/ sources/*.java'
+alias jex='java -classpath classes'
