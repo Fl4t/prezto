@@ -46,8 +46,9 @@ alias c='clear'
 alias wee='weechat-curses'
 alias tree='nocorrect tree'
 
-# DA2I (java)
+# DA2I
 alias jd='javadoc -d doc sources/*java'
 alias jc='javac -sourcepath sources/ -d classes/ -classpath classes/ sources/*.java'
 alias jex='java -classpath classes'
 alias jdir='mkdir classes doc sources'
+alias gvim='gvim --remote-silent'
