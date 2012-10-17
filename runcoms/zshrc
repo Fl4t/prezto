@@ -23,9 +23,8 @@ export VISUAL='mvim -v'
 alias less='vimpager'
 
 # Vim aliases
-alias v='vim'
-alias sv='sudo vim'
-alias gvim='mvim --remote-silent'
+alias vim='mvim -v'
+alias mvim='mvim --remote-silent'
 
 # Souvent modifié
 alias vimrc='vim ~/.vimrc'
