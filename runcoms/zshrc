@@ -13,8 +13,11 @@ fi
 # Customize to your needs...
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:/usr/texbin"
-# pour avoir les binaires installé via pear
-export PATH="$(brew --prefix php53)/bin:$PATH"
+
+if (( $+commands[brew] )); then
+  # pour avoir les binaires installé via pear
+  export PATH="$(brew --prefix php53)/bin:$PATH"
+fi
 
 export EDITOR='mvim -v'
 export VISUAL='mvim -v'
@@ -22,9 +25,8 @@ export VISUAL='mvim -v'
 # vimpager
 alias less='vimpager'
 
-# Vim aliases
-alias vim='mvim -v'
-alias mvim='mvim --remote-silent'
+# MacVim aliases
+alias mvimr='mvim --remote-silent'
 
 # Souvent modifié
 alias vimrc='vim ~/.vimrc'
