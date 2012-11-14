@@ -17,9 +17,19 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
-export PAGER='less'
+if [[ "$OSTYPE" == darwin* ]]; then
+  export EDITOR='mvim -v'
+  export VISUAL='mvim -v'
+else
+  export EDITOR='vi'
+  export VISUAL='vi'
+fi
+
+if (( $+commands[vimpager] )); then
+  export PAGER='vimpager'
+else
+  export PAGER='less'
+fi
 
 #
 # Language
