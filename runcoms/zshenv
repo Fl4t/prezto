@@ -25,11 +25,7 @@ else
   export VISUAL='vi'
 fi
 
-if (( $+commands[vimpager] )); then
-  export PAGER='vimpager'
-else
-  export PAGER='less'
-fi
+export PAGER='less'
 
 #
 # Language

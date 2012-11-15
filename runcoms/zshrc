@@ -17,9 +17,6 @@ if (( $+commands[brew] )); then
   export PATH="$(brew --prefix php53)/bin:$PATH"
 fi
 
-# pager par defaut
-alias less=$PAGER
-
 # MacVim aliases
 alias mvimr='mvim --remote-silent'
 
