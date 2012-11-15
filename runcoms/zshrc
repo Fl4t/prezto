@@ -49,3 +49,24 @@ alias jc='javac -sourcepath sources/ -d classes/ -classpath classes/ sources/*.j
 alias jex='java -classpath classes'
 alias jdir='mkdir classes doc sources'
 alias gvim='gvim --remote-silent'
+
+if [[ "$OSTYPE" != darwin* ]]; then
+
+  # Mes binaires avant les autres
+  export PATH="$HOME/bin:$PATH"
+
+  # Activer fasd
+  eval "$(fasd --init auto)"
+
+  # Redémarre le serveur tomcat
+  alias tomreload='$HOME/tomcat/bin/startup.sh && $HOME/tomcat/bin/shutdown.sh'
+
+  # Avoir les commandes java
+  export JAVA_HOME="/usr/lib/jvm/java-6-sun"
+  export PATH=$PATH:"$JAVA_HOME/bin"
+
+  # Sourcing des classes pour la compilation J2E
+  export CLASSPATH=".:..:$HOME/Documents/da2i/bddr/driver/driver_postgresql.jar"
+  export CLASSPATH="$CLASSPATH:$HOME/tomcat/lib/servlet-api.jar"
+
+fi
