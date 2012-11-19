@@ -54,7 +54,7 @@ alias jex='java -classpath classes'
 alias jdir='mkdir classes doc sources'
 alias gvim='gvim --remote-silent'
 
-if [[ "$OSTYPE" != darwin* ]]; then
+if [[ "$OSTYPE" == linux-gnu ]]; then
 
   # Mes binaires avant les autres
   export PATH="$HOME/bin:$PATH"
