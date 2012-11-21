@@ -18,10 +18,10 @@ if (( $+commands[brew] )); then
 
   # Formula coreutils
   # Pour avoir les commandes GNU plutôt que les vieillotes d'OSX
-  PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+  #PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
 
   # Et avoir les bons manuels
-  MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
+  #MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
 fi
 
 # MacVim aliases
