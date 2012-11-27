@@ -54,6 +54,9 @@ alias jex='java -classpath classes'
 alias jdir='mkdir classes doc sources'
 alias gvim='gvim --remote-silent'
 
+# Sourcing de l'api J2EE
+export CLASSPATH="$CLASSPATH:$HOME/tomcat/lib/servlet-api.jar"
+
 if [[ "$OSTYPE" == linux-gnu ]]; then
 
   # Mes binaires avant les autres
@@ -69,8 +72,12 @@ if [[ "$OSTYPE" == linux-gnu ]]; then
   export JAVA_HOME="/usr/lib/jvm/java-6-sun"
   export PATH=$PATH:"$JAVA_HOME/bin"
 
-  # Sourcing des classes pour la compilation J2E
+  # Sourcing du driver PostgreSQL
   export CLASSPATH=".:..:$HOME/Documents/da2i/bddr/driver/driver_postgresql.jar"
-  export CLASSPATH="$CLASSPATH:$HOME/tomcat/lib/servlet-api.jar"
+
+else
+
+  # Sourcing du driver PostgreSQL
+  export CLASSPATH=".:..:$HOME/Documents/workspace/da2i/bddr/driver/driver_postgresql.jar"
 
 fi
