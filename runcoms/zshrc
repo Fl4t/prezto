@@ -73,11 +73,11 @@ if [[ "$OSTYPE" == linux-gnu ]]; then
   export PATH=$PATH:"$JAVA_HOME/bin"
 
   # Sourcing du driver PostgreSQL
-  export CLASSPATH=".:..:$HOME/Documents/da2i/bddr/driver/driver_postgresql.jar"
+  export CLASSPATH="$CLASSPATH:.:..:$HOME/Documents/da2i/bddr/driver/driver_postgresql.jar"
 
 else
 
   # Sourcing du driver PostgreSQL
-  export CLASSPATH=".:..:$HOME/Documents/workspace/da2i/bddr/driver/driver_postgresql.jar"
+  export CLASSPATH="$CLASSPATH:.:..:$HOME/Documents/workspace/da2i/bddr/driver/driver_postgresql.jar"
 
 fi
