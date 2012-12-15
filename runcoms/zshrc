@@ -69,3 +69,8 @@ else
   export CLASSPATH="$CLASSPATH:.:..:$HOME/Documents/workspace/da2i/bddr/driver/driver_postgresql.jar"
 
 fi
+
+# RVM (vimgolf)
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
