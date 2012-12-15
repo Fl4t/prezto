@@ -12,18 +12,6 @@ fi
 
 # Customize to your needs...
 
-# pour avoir les binaires installé via pear
-if (( $+commands[brew] )); then
-  export PATH="$(brew --prefix php53)/bin:$PATH"
-
-  # Formula coreutils
-  # Pour avoir les commandes GNU plutôt que les vieillotes d'OSX
-  #PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
-
-  # Et avoir les bons manuels
-  #MANPATH="$(brew --prefix coreutils)/libexec/gnuman:$MANPATH"
-fi
-
 # MacVim aliases
 alias mvimr='mvim --remote-silent'
 
