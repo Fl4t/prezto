@@ -12,9 +12,6 @@ fi
 
 # Customize to your needs...
 
-# MacVim aliases
-alias mvimr='mvim --remote-silent'
-
 # Souvent à modifier
 alias vimrc='vim ~/.vimrc'
 alias gvimrc='vim ~/.gvimrc'
