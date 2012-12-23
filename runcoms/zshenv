@@ -87,6 +87,7 @@ path=(
   /{bin,sbin}
   $path
   $HOME/.rvm/bin
+  $HOME/bin
 )
 
 for path_file in /etc/paths.d/*(.N); do
