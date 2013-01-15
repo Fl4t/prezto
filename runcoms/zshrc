@@ -61,10 +61,11 @@ if [[ "$OSTYPE" == linux-gnu ]]; then
   export CLASSPATH="$CLASSPATH:.:..:$HOME/Documents/da2i/bddr/driver/driver_postgresql.jar"
 
 else
-
   # Sourcing du driver PostgreSQL
   export CLASSPATH="$CLASSPATH:.:..:$HOME/Documents/workspace/da2i/bddr/driver/driver_postgresql.jar"
 
+  # Pour que tomcat lise avec la même version avec laquel je compile les servlets
+  export JAVA_HOME="/Library/Java/JavaVirtualMachines/JDK 1.7.0 Developer Preview.jdk/Contents/Home"
 fi
 
 # RVM (vimgolf)
