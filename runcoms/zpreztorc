@@ -32,6 +32,7 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'terminal' \
   'editor' \
+  'tmux' \
   'history' \
   'directory' \
   'spectrum' \
