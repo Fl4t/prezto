@@ -13,10 +13,14 @@ fi
 # Customize to your needs...
 
 # Souvent à modifier
-alias vimrc='vim ~/.vimrc'
-alias gvimrc='vim ~/.gvimrc'
-alias zshrc='vim ~/.zshrc'
+alias vimrc='e ~/.vimrc'
+alias gvimrc='e ~/.gvimrc'
+alias zshrc='e ~/.zshrc'
 alias sozsh='source ~/.zshrc'
+alias zshenv='e ~/.zshenv'
+alias zpreztorc='e ~/.zpreztorc'
+alias gitconfig='e ~/.gitconfig'
+alias tmuxconf='e ~/.tmux.conf'
 
 # ls commands
 alias ls++='LC_ALL=en_US.UTF-8 LANG=en ls++'
