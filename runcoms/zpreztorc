@@ -55,6 +55,9 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 # Git
 #
 
+# Pretier oneline --prety=format: switch.
+zstyle ':prezto:module:git:log:oneline' format '%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
 # Ignore submodules when they are 'dirty', 'untracked', 'all', or 'none'.
 zstyle ':prezto:module:git:status:ignore' submodules 'dirty'
 
