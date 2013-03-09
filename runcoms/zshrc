@@ -77,8 +77,7 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # vide les fichiers en paramètre de la commande
-function vider_fichiers {
-  for file in $@; do
-    :>! $file
-  done
-}
+function vider_fichiers { for file in $@; do :>! $file ; done }
+
+# filtre la ligne de recherche grep de ps
+function psgrep { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
