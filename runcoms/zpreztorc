@@ -31,6 +31,7 @@ zstyle ':prezto:load' pmodule \
   'osx' \
   'syntax-highlighting' \
   'terminal' \
+  'perl' \
   'editor' \
   'tmux' \
   'history' \
