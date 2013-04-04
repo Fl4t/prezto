@@ -52,7 +52,7 @@ path=(
   $HOME/bin
   /usr/local/{bin,sbin}
   /usr/texbin
-  /usr/local/share/python
+  $HOME/.powerline/scripts
   $path
 )
 
