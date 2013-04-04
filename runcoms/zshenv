@@ -18,8 +18,8 @@ fi
 #
 
 if [[ "$OSTYPE" == darwin* ]]; then
-  export EDITOR='mvim -v'
-  export VISUAL='mvim -v'
+  export EDITOR='vim'
+  export VISUAL='vim'
 else
   export EDITOR='vi'
   export VISUAL='vi'
@@ -48,10 +48,12 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  /usr/local/{bin,sbin}
-  $path
   $HOME/.rvm/bin
   $HOME/bin
+  /usr/local/{bin,sbin}
+  /usr/texbin
+  /usr/local/share/python
+  $path
 )
 
 #

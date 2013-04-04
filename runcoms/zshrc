@@ -12,7 +12,7 @@ fi
 
 # Customize to your needs...
 
-# Souvent à modifier
+# files...
 alias vimrc='e ~/.vimrc'
 alias gvimrc='e ~/.gvimrc'
 alias zshrc='e ~/.zshrc'
@@ -23,12 +23,7 @@ alias gitconfig='e ~/.gitconfig'
 alias tmuxconf='e ~/.tmux.conf'
 
 # ls commands
-alias ls++='LC_ALL=en_US.UTF-8 LANG=en ls++'
 alias lsd='ls -ld .*' # List only dot files
-
-# modified commands
-alias ping='ping -c 5'
-alias mysql='mysql -u root -p'
 
 # shortcut
 alias q='exit'
@@ -36,41 +31,8 @@ alias c='clear'
 alias wee='weechat-curses'
 alias tree='nocorrect tree'
 
-# DA2I
-alias jd='javadoc -d doc sources/*java'
-alias jc='javac -sourcepath sources/ -d classes/ -classpath classes/ sources/*.java'
-alias jex='java -classpath classes'
-alias jdir='mkdir classes doc sources'
-alias gvim='gvim --remote-silent'
-
-# Sourcing de l'api J2EE
-export CLASSPATH="$CLASSPATH:$HOME/tomcat/lib/servlet-api.jar"
-
-if [[ "$OSTYPE" == linux-gnu ]]; then
-
-  # Mes binaires avant les autres
-  export PATH="$HOME/bin:$PATH"
-
-  # Activer fasd
-  eval "$(fasd --init auto)"
-
-  # Redémarre le serveur tomcat
-  alias tomreload='$HOME/tomcat/bin/startup.sh && $HOME/tomcat/bin/shutdown.sh'
-
-  # Avoir les commandes java
-  export JAVA_HOME="/usr/lib/jvm/java-6-sun"
-  export PATH=$PATH:"$JAVA_HOME/bin"
-
-  # Sourcing du driver PostgreSQL
-  export CLASSPATH="$CLASSPATH:.:..:$HOME/Documents/da2i/bddr/driver/driver_postgresql.jar"
-
-else
-  # Sourcing du driver PostgreSQL
-  export CLASSPATH="$CLASSPATH:.:..:$HOME/Documents/workspace/da2i/bddr/driver/driver_postgresql.jar"
-
-  # Pour que tomcat lise avec la même version avec laquel je compile les servlets
-  export JAVA_HOME="/Library/Java/JavaVirtualMachines/JDK 1.7.0 Developer Preview.jdk/Contents/Home"
-fi
+# Activer fasd
+eval "$(fasd --init auto)"
 
 # RVM (vimgolf)
 # Load RVM into a shell session *as a function*
