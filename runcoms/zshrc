@@ -29,7 +29,6 @@ alias lsd='ls -ld .*' # List only dot files
 alias q='exit'
 alias c='clear'
 alias wee='weechat-curses'
-alias tree='nocorrect tree'
 
 # Activer fasd
 eval "$(fasd --init auto)"
@@ -43,6 +42,3 @@ function vider_fichiers { for file in $@; do :>! $file ; done }
 
 # filtre la ligne de recherche grep de ps
 function psgrep { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
-
-# hook qui liste les packets contenant une commande non trouvée
-source /usr/share/doc/pkgfile/command-not-found.zsh
