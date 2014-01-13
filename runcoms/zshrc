@@ -39,6 +39,9 @@ alias q='exit'
 alias c='clear'
 alias wee='weechat-curses'
 
+# NAS
+alias nwsp2="ssh -i '/home/warez/.ssh/ns2_rsa' 'root@192.168.1.42'"
+
 # Activer fasd
 eval "$(fasd --init auto)"
 
